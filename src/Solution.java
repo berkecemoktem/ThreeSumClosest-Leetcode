@@ -12,17 +12,13 @@ Example 2:
 Input: nums = [0,0,0], target = 1
 Output: 0
 */
-
 class Solution {
     public int threeSumClosest(int[] nums, int target) {
 
         int closest = Integer.MAX_VALUE;
-
         int diffMax = Integer.MAX_VALUE;
-
         int value =Integer.MAX_VALUE;
-        // Arrays.sort(nums);
-
+        
         for(int i = 0 ; i < nums.length-2 ; i++){
 
             for(int j = i+1 ; j < nums.length-1 ; j++){
@@ -39,14 +35,9 @@ class Solution {
                         if(diff == diffMax){
                             closest = sum;
                         }
-
                     }
-
                 }
-
-
             }
-
         }
         return closest;
     }
